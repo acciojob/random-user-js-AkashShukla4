@@ -5,9 +5,9 @@ fetch('https://randomuser.me/api/');
 		throw new Error("Something went wrong");
 	}
 	return response.json();
-}).then(data => {
+}).then(data){
 	console.log(data);
 })
-.catch(err => {
+.catch(err){
 console.log("Error",err);
 });
